@@ -8,4 +8,71 @@ html,
 body {
     height: 100%;
     background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 300px;
+    width: 300px;
+    /* background-color: #000; */
+}
+
+.dot-div {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: dot 4s infinite;
+    position: absolute;
+}
+
+.dot {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.thumb {
+    position: absolute;
+    height: 52%;
+    width: 1px;
+    background-color: #fff;
+}
+
+.d1 {
+    animation-delay: 0;
+}
+
+.d2 {
+    animation-delay: .2s;
+}
+
+.d3 {
+    animation-delay: .4s;
+}
+
+.d4 {
+    animation-delay: .6s;
+}
+
+.d5 {
+    animation-delay: .8s;
+}
+
+.d6 {
+    animation-delay: 1s;
+}
+
+@keyframes dot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
